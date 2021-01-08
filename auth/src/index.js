@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const app = require('./app');
 
 const start = async () => {
-    console.log("STARTING UP!");
+    console.log("STARTING UPPPP!");
     if (!process.env.JWT_KEY) {
         throw new Error('JWT_KEY is missing!');
     }
