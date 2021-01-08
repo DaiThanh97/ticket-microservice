@@ -8,6 +8,8 @@ let mongo;
 // Hook function
 // Run before all test code
 beforeAll(async () => {
+    process.env.JWT_KEY = 'asdfasdf';
+
     mongo = new MongoMemoryServer();
     const mongoURI = await mongo.getUri();
 
