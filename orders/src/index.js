@@ -6,7 +6,7 @@ const { ExpirationCompleteListener } = require('./events/listener/expiration.lis
 const { PaymentCreatedListener } = require('./events/listener/payment.listener');
 
 const start = async () => {
-
+    console.log("Start!");
     if (!process.env.JWT_KEY) {
         throw new Error('JWT_KEY is missing!');
     }

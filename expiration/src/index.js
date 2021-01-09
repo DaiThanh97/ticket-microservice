@@ -4,6 +4,7 @@ const natsWrapper = require('./nats-wrapper');
 const { OrderCreatedListener } = require('./events/listener/order.listener');
 
 const start = async () => {
+    console.log("Start!");
     if (!process.env.NATS_CLIENT_ID) {
         throw new Error('NATS_CLIENT_ID is missing!');
     }

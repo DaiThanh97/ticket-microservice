@@ -4,6 +4,7 @@ const app = require('./app');
 const { OrderCancelledListener, OrderCreatedListener } = require('./events/listener/order.listener');
 
 const start = async () => {
+    console.log("Start!");
 
     if (!process.env.JWT_KEY) {
         throw new Error('JWT_KEY is missing!');
